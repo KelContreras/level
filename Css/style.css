@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+  }
+  
+  nav {
+    text-align: center;
+    color: white;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  
+  header {
+    text-align: center;
+  }
+  
+  #Inicio {
+    background-image: url('../Img/ejemploBg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  /* Estilos adicionales para mejorar la apariencia */
+  h1 {
+    font-size: 2em;
+    color: white;
+  }
+
+  nav form input[type="text"] {
+  background-image: url('ruta/a/tu/icono-lupa.png');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 20px;
+  padding: 10px 10px 10px 40px; /* Ajusta el padding según sea necesario */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+nav form input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff; /* Cambia el color del borde al hacer clic en el campo */
+}
+  
+  p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
