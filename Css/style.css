@@ -88,7 +88,6 @@ header {
     padding: 100px 0;
   }
   
-  /* Estilos adicionales para mejorar la apariencia */
   h1 {
     font-size: 2em;
     color: white;
@@ -99,7 +98,7 @@ header {
   background-repeat: no-repeat;
   background-position: 10px center;
   background-size: 20px;
-  padding: 10px 10px 10px 40px; /* Ajusta el padding según sea necesario */
+  padding: 10px 10px 10px 40px; 
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
@@ -107,9 +106,7 @@ header {
 
 nav form input[type="text"]:focus {
   outline: none;
-  border-color: #007bff; /* Cambia el color del borde al hacer clic en el campo */
-}
-  
+  border-color: #007bff;  }
   p {
     font-size: 1.2em;
     line-height: 1.6;
@@ -148,5 +145,39 @@ nav form input[type="text"]:focus {
 }
 
 #arriba:hover {
-    opacity: 1;    
+    opacity: 1;   } 
+
+/* PRODUCTOS */
+.container{
+  text-align: center;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  display: block;
+  margin: 100px 100px;
+}
+.container h1{
+  font-weight: 800;
+  font-size: 70px;
+  border-bottom: 3px ridge;
+}
+
+.items_products{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 5px;
+  margin-top: 30px;
+  padding: 10px;
+  justify-content: center;
+
+}
+
+.product img{
+  width: 100%;
+  height: 500px;
+
+}
+.product{
+  background-color: rgba(42, 63, 250, 0.998);
+  border: 1.5px solid blue;
+  height: 630px;
 }
