@@ -34,7 +34,6 @@ body {
     padding: 100px 0;
   }
   
-  /* Estilos adicionales para mejorar la apariencia */
   h1 {
     font-size: 2em;
     color: white;
@@ -45,7 +44,7 @@ body {
   background-repeat: no-repeat;
   background-position: 10px center;
   background-size: 20px;
-  padding: 10px 10px 10px 40px; /* Ajusta el padding según sea necesario */
+  padding: 10px 10px 10px 40px; 
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
@@ -53,9 +52,8 @@ body {
 
 nav form input[type="text"]:focus {
   outline: none;
-  border-color: #007bff; /* Cambia el color del borde al hacer clic en el campo */
-}
-  
+  border-color: #007bff; 
+     }
   p {
     font-size: 1.2em;
     line-height: 1.6;

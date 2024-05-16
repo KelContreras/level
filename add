@@ -1,0 +1,17 @@
+[33mcommit 97a0fdf4278ee5aa312d0f6b357788b1e260daa8[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: Kelvin Contreras <kelvinjcontrerasm@gmail.com>
+Date:   Thu May 9 15:06:02 2024 -0300
+
+    agregué algunos estilos segun propuesta de diseño de Neuyin
+
+[33mcommit bc79f8bb7e27bb075f66563138593649cb0ac87f[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Kelvin Contreras <kelvinjcontrerasm@gmail.com>
+Date:   Mon May 6 23:24:14 2024 -0300
+
+    Inicié maquetado semántico
+
+[33mcommit 6c424c26398f719dcaec5a869c481c16c7ca2ad2[m
+Author: Kelvin Contreras <kelvinjcontrerasm@gmail.com>
+Date:   Mon May 6 13:57:38 2024 -0300
+
+    Primer commit creacion del proyecto, carpeta css y js, arachivo index
