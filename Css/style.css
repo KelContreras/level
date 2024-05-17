@@ -115,6 +115,71 @@ nav form input[type="text"]:focus {
   outline: none;
   border-color: #007bff;
 }
+
+#contacto {
+  
+  background: rgb(29, 31, 120);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el formulario de contacto */
+#contacto .grupo {
+  margin-bottom: 2vw;
+}
+
+#contacto label {
+  display: block;
+  margin-bottom: 1.5vw;
+  color: rgb(255, 255, 255);
+}
+
+#contacto input[type="text"],
+#contacto input[type="email"],
+#contacto input[type="tel"],
+#contacto select {
+  width: 75%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #aa5a5a;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+#contacto input[type="radio"],
+#contacto input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+#contacto button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contacto button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+#contacto .contact-image {
+  display: block;
+  max-width: 10%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.barra {
+  display: block;
+  color: red;
+  margin-top: 5px;
+}
+
+
 p {
   font-size: 1.2em;
   line-height: 1.6;
