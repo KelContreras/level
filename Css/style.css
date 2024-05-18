@@ -1,76 +1,24 @@
 body {
+  font-family: 'Roboto-flex';
   margin: 0;
   padding: 0;
   background-color: black;
   color: white;
 }
-
-header {
-  text-align: center;
-}
+/* Estilo de la navbar */
 nav {
-  text-align: center;
+  text-align: right;
   color: white;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
+  text-decoration: none;
+  background-color: #3a25f380; 
 }
 
 nav ul li {
   display: inline-block;
-  margin: 0 10px;
+  padding: 15px 30px;
 }
 
-form.buscar {
-  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
-  text-align: center;
-}
-
-form.buscar input[type="text"] {
-  background-color: rgb(0, 0, 0); /* Color de fondo azul con opacidad */
-  color: white; /* Color del texto */
-  padding: 10px 20px; /* Ajusta el relleno según sea necesario */
-  border: none;
-  box-shadow: 0 4px 6px rgba(58, 37, 243, 0.5);
-  border-radius: 20px; /* Ajusta el radio de borde según sea necesario */
-  width: 400px; /* Ancho de la barra de búsqueda */
-  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
-}
-
-form.buscar input[type="text"]:focus {
-  outline: none; /* Elimina el contorno al hacer clic en el campo */
-  background-color: rgba(
-    19,
-    19,
-    19,
-    0.8
-  ); /* Color de fondo azul más intenso al hacer foco */
-  box-shadow: 0 3px 5px rgba(253, 80, 213, 0.5);
-}
-
-form.buscar button[type="submit"] {
-  background-color: rgb(0, 0, 0); /* Color de fondo blanco con opacidad */
-  color: rgb(255, 255, 255); /* Color del texto */
-  padding: 10px 20px; /* Ajusta el relleno según sea necesario */
-  border: none; /* Elimina el borde */
-  box-shadow: 0 4px 6px rgba(58, 37, 243, 0.5);
-  border-radius: 25px; /* Ajusta el radio de borde según sea necesario */
-  margin-left: 10px; /* Ajusta el margen izquierdo según sea necesario */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
-}
-
-form.buscar button[type="submit"]:hover {
-  background-color: rgb(
-    0,
-    0,
-    0
-  ); /* Color de fondo blanco más intenso al pasar el cursor */
-  box-shadow: 0 3px 5px rgba(253, 80, 213, 0.5);
-}
-
+/* Estilo para el carousel */
 #carouselExample {
   width: 100%;
   height: 100%;
@@ -86,22 +34,85 @@ form.buscar button[type="submit"]:hover {
   width: 100%;
   height: 100%;
 }
-
-#Inicio {
+/* Estilo para section inicio */
+#inicio {
   background-size: cover;
   background-position: center;
   color: white;
   text-align: center;
-  padding: 100px 0;
+  padding: 0;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 4em;
   color: white;
+  margin: 20px;
+}
+/* Estilo del slogan */
+#slogan {
+  font-style: italic;
+  color: #3a25f380;
+}
+/* Estilo del logo */
+.logo {
+  width: 200px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo de la barra de búsqueda */
+form.buscar {
+  margin-top: 20px;
+  text-align: center;
+}
+
+form.buscar input[type="text"] {
+  background-color: rgb(0, 0, 0); 
+  color: white; 
+  padding: 10px 20px; 
+  border: none;
+  box-shadow: 0 4px 6px #3a25f380;
+  border-radius: 20px; 
+  width: 400px; 
+  transition: background-color 0.3s ease; 
+}
+
+form.buscar input[type="text"]:focus {
+  outline: none; 
+  background-color: rgba(
+    19,
+    19,
+    19,
+    0.8
+  ); 
+    box-shadow: 0 3px 5px #cc2bf980;
+}
+
+form.buscar button[type="submit"] {
+  background-color: #000000; 
+  color: #ffffff; 
+  padding: 10px 20px; 
+  border: none; 
+  box-shadow: 0 4px 6px #3a25f380;
+  border-radius: 25px; 
+  margin-left: 10px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+form.buscar button[type="submit"]:hover {
+  background-color: rgb(
+    0,
+    0,
+    0
+  ); 
+  box-shadow: 0 3px 5px #cc2bf980;
 }
 
 nav form input[type="text"] {
-  background-image: url("ruta/a/tu/icono-lupa.png");
+  
   background-repeat: no-repeat;
   background-position: 10px center;
   background-size: 20px;
@@ -116,8 +127,13 @@ nav form input[type="text"]:focus {
   border-color: #007bff;
 }
 
+.contenido{
+  text-align: justify;
+  margin: 10%;
+  padding: 40px;
+}
+
 #contacto {
-  
   background: rgb(29, 31, 120);
   padding: 20px;
   border-radius: 8px;
