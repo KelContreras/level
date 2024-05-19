@@ -2,20 +2,61 @@ body {
   font-family: 'Roboto-flex';
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: #000000;
   color: white;
 }
+
+/* Estilo del logo */
+.logo {
+  width: 70px;
+  height: auto;
+  margin-right: 10px; 
+}
+
+/* Estilo del slogan */
+#slogan {
+  font-style: italic;
+  color: #eb1befad;
+  margin: 0;
+  padding: 0;
+}
+
 /* Estilo de la navbar */
 nav {
-  text-align: right;
-  color: white;
-  text-decoration: none;
-  background-color: #3a25f380; 
+  background-color: #3629aa80;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 0 20px; 
+}
+
+.logo-slogan {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; 
 }
 
 nav ul li {
   display: inline-block;
-  padding: 15px 30px;
+  padding: 20px 30px;
+}
+
+nav ul li a {
+  color: #ffffff; 
+  text-decoration: none; 
+  font-weight: bold; 
+  font-size: 18px;
+  transition: 0.7s;
+}
+
+nav ul li a:hover {
+  color: #eb1befad;
 }
 
 /* Estilo para el carousel */
@@ -34,32 +75,21 @@ nav ul li {
   width: 100%;
   height: 100%;
 }
+
 /* Estilo para section inicio */
 #inicio {
   background-size: cover;
   background-position: center;
-  color: white;
+  color: #ffffff;
   text-align: center;
-  padding: 0;
+  padding: 0 0 20px 0;
 }
 
 h1 {
-  font-size: 4em;
-  color: white;
-  margin: 20px;
-}
-/* Estilo del slogan */
-#slogan {
-  font-style: italic;
-  color: #3a25f380;
-}
-/* Estilo del logo */
-.logo {
-  width: 200px;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 70px;
+  color: #ffffff;
+  margin: 100px auto;
+  padding: 20px 10px;
 }
 
 /* Estilo de la barra de búsqueda */
@@ -68,47 +98,39 @@ form.buscar {
   text-align: center;
 }
 
-form.buscar input[type="text"] {
-  background-color: rgb(0, 0, 0); 
-  color: white; 
+form.buscar input {
+  background-color: #000000;
+  color: #ffffff; 
   padding: 10px 20px; 
   border: none;
-  box-shadow: 0 4px 6px #3a25f380;
+  box-shadow: 0 6px 8px #3a25f380;
   border-radius: 20px; 
   width: 400px; 
-  transition: background-color 0.3s ease; 
+  transition: 0.7s ease; 
 }
 
-form.buscar input[type="text"]:focus {
+form.buscar input:focus {
   outline: none; 
-  background-color: rgba(
-    19,
-    19,
-    19,
-    0.8
-  ); 
-    box-shadow: 0 3px 5px #cc2bf980;
+  background-color: #131313cc; 
+  box-shadow: 0 3px 5px #eb1befad;
 }
 
-form.buscar button[type="submit"] {
+/* Estilo del botón de búsqueda */
+form.buscar button {
   background-color: #000000; 
   color: #ffffff; 
   padding: 10px 20px; 
   border: none; 
-  box-shadow: 0 4px 6px #3a25f380;
+  box-shadow: 0 6px 8px #3a25f380;
   border-radius: 25px; 
   margin-left: 10px; 
   cursor: pointer; 
-  transition: background-color 0.3s ease; 
+  transition: 0.7s ease; 
 }
 
 form.buscar button[type="submit"]:hover {
-  background-color: rgb(
-    0,
-    0,
-    0
-  ); 
-  box-shadow: 0 3px 5px #cc2bf980;
+  background-color: #000000; 
+  box-shadow: 0 3px 5px #eb1befad;
 }
 
 nav form input[type="text"] {
@@ -127,80 +149,146 @@ nav form input[type="text"]:focus {
   border-color: #007bff;
 }
 
+/* PRODUCTOS */
+.container {
+  text-align: center;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  display: block;
+  margin: 100px auto; 
+}
+
+.container h2 {
+  font-weight: 800;
+  font-size: 50px;
+  border-bottom: 3px ridge;
+  padding: 40px;
+}
+
+.items_products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 40px; 
+  margin-top: 30px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.product img {
+  width: 100%;
+  height: auto; 
+  aspect-ratio: 1/1; 
+  object-fit: cover;
+}
+.product {
+  border: 2px solid #3629aa80;
+  border-radius: 20px;
+  padding: 20px; 
+  height: auto; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product:hover {
+  background-color: #12113880;
+  box-shadow: 0 0 10px rgb(33, 53, 156), 0 0 15px rgb(33, 53, 156), 0 0 25px rgb(33, 53, 156), 0 0 30px rgb(33, 53, 156);
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.price {
+  color:#3629aa80;
+}
+
+.price:hover {
+    color: #eb1befad;
+    text-decoration: underline;
+    transition: 0.7s;
+}
+
 .contenido{
   text-align: justify;
   margin: 10%;
   padding: 40px;
 }
 
-#contacto {
-  background: rgb(29, 31, 120);
-  padding: 20px;
+#nosotros {
+  background: #3629aa80;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px #0000001a;
 }
 
 /* Estilos para el formulario de contacto */
+#contacto {
+  background: #3629aa80;
+  text-align: justify;
+  margin: 10%;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #0000001a;
+}
+
+#contacto .container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contacto h2 {
+  margin-bottom: 20px;
+}
+
 #contacto .grupo {
-  margin-bottom: 2vw;
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 #contacto label {
   display: block;
-  margin-bottom: 1.5vw;
-  color: rgb(255, 255, 255);
+  margin-bottom: 5px;
+  color: #555;
 }
 
 #contacto input[type="text"],
 #contacto input[type="email"],
 #contacto input[type="tel"],
-#contacto select {
-  width: 75%;
-  padding: 8px;
+#contacto select,
+#contacto textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   box-sizing: border-box;
-  border: 1px solid #aa5a5a;
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
-
-#contacto input[type="radio"],
-#contacto input[type="checkbox"] {
-  margin-right: 10px;
-}
-
-#contacto button[type="submit"] {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-#contacto button[type="submit"]:hover {
-  background-color: #0056b3;
-}
-
-#contacto .contact-image {
-  display: block;
-  max-width: 10%;
-  height: auto;
-  margin-top: 20px;
-}
-
-.barra {
-  display: block;
-  color: red;
   margin-top: 5px;
 }
 
-
-p {
-  font-size: 1.2em;
-  line-height: 1.6;
+#contacto input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 5px;
 }
 
+#contacto button[type="submit"] {
+  background-color: #000000; 
+  color: #ffffff; 
+  padding: 10px 20px; 
+  border: none; 
+  box-shadow: 0 6px 8px #3a25f380;
+  border-radius: 25px; 
+  margin-left: 10px; 
+  cursor: pointer; 
+  transition: 0.7s ease; 
+}
+
+#contacto button[type="submit"]:hover {
+  box-shadow: 0 3px 5px #ffffff;
+}
+
+#contacto .contact-image {
+  max-width: 100px;
+  margin-top: 20px;
+}
+
+/* Estilos del footer */
 footer {
   text-align: center;
   padding: 20px 0;
@@ -215,7 +303,7 @@ footer {
   height: 40px;
   margin: 1%;
   opacity: 0.4;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
 .logos-footer img:hover {
@@ -235,37 +323,4 @@ footer {
 
 #arriba:hover {
   opacity: 1;
-}
-
-/* PRODUCTOS */
-.container {
-  text-align: center;
-  box-sizing: border-box;
-  text-transform: uppercase;
-  display: block;
-  margin: 100px 100px;
-}
-.container h1 {
-  font-weight: 800;
-  font-size: 70px;
-  border-bottom: 3px ridge;
-}
-
-.items_products {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 5px;
-  margin-top: 30px;
-  padding: 10px;
-  justify-content: center;
-}
-
-.product img {
-  width: 100%;
-  height: 500px;
-}
-.product {
-  background-color: rgba(42, 63, 250, 0.998);
-  border: 1.5px solid blue;
-  height: 630px;
 }
