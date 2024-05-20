@@ -23,7 +23,7 @@ body {
 
 /* Estilo de la navbar */
 nav {
-  background-color: #281d8480; 
+  background-color: #292080; 
   display: flex;
   justify-content: space-between; 
   align-items: center; 
@@ -70,7 +70,6 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-/* Esconde el checkbox */
 #menu-toggle {
   display: none;
 }
@@ -125,7 +124,7 @@ form.buscar input {
   border: none;
   box-shadow: 0 6px 8px #3a25f380;
   border-radius: 20px; 
-  width: 40%;
+  width: 45%;
   transition: 0.7s ease; 
 }
 
@@ -201,7 +200,7 @@ nav form input[type="text"]:focus {
   object-fit: cover;
 }
 .product {
-  border: 2px solid #3629aa80;
+  border: 2px solid #1f1862;
   border-radius: 20px;
   padding: 20px; 
   height: auto; 
@@ -236,7 +235,7 @@ nav form input[type="text"]:focus {
 
 /* Estilos para nosotros */
 #nosotros {
-    background: #3629aa80;
+    background: #1f1862;
     text-align: justify;
     margin: 10%;
     padding: 40px;
@@ -318,7 +317,7 @@ nav form input[type="text"]:focus {
 
 /* Estilos para el formulario de contacto */
 #contacto {
-  background: #3629aa80;
+  background: #1f1862;
   text-align: justify;
   margin: 10%;
   padding: 40px;
@@ -363,8 +362,8 @@ nav form input[type="text"]:focus {
 #contacto select,
 #contacto textarea,
 #contacto input[type="file"] {
-  width: 100%; /* Cambiar el ancho al 100% para que se ajuste al contenedor */
-  padding: 10px; /* Aumentar el padding para mejorar la usabilidad en dispositivos móviles */
+  width: 100%; 
+  padding: 10px; 
   border: 1px solid #ccc;
   border-radius: 8px;
   box-sizing: border-box;
@@ -377,7 +376,7 @@ nav form input[type="text"]:focus {
 }
 
 #contacto button[type="submit"] {
-  background-color: #281d8480; 
+  background-color: #1f1862; 
   color: #ffffff; 
   padding: 10px 20px; 
   margin-top: 2%;
@@ -442,7 +441,6 @@ footer {
 
 /* Media queries para dispositivos */
 @media (max-width: 768px), (min-width: 768px) and (max-width: 1366px), (max-width: 1024px) {
-
   nav ul {
     display: none; 
     flex-direction: column; 
