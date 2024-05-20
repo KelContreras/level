@@ -444,10 +444,12 @@ footer {
   nav ul {
     display: none; 
     flex-direction: column; 
-    width: 100%; 
+    width: 40vw; 
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 60%;
+    background-color: #1f1862;
+    border-radius: 7px;
   }
 
   nav ul li {
